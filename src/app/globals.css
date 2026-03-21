@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fffcfd; /* Very subtle pink tint white */
+  --foreground: #2d1620; /* Dark pinkish brown/black */
+  --card: #fff5f8;
+  --card-hover: #ffeff4;
+  --border: #fce4ec;
+  --primary: #ff4d94; /* Vibrant tech pink */
+  --primary-glow: rgba(255, 77, 148, 0.15);
+  --selection: rgba(255, 77, 148, 0.2);
+}
+
+.dark {
+  --background: #0d0508; /* Deep dark pinkish black */
+  --foreground: #ffebee;
+  --card: #1a0a10;
+  --card-hover: #260e18;
+  --border: #2d101a;
+  --primary: #ff66a3; /* Softer neon pink for dark mode */
+  --primary-glow: rgba(255, 102, 163, 0.2);
+  --selection: rgba(255, 102, 163, 0.3);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+  border-color: var(--border);
+}
+
+/* Custom selection color */
+::selection {
+  background: var(--primary);
+  color: white;
+}
