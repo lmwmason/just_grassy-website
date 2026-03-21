@@ -27,7 +27,7 @@ const fadeIn = {
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
   transition: { duration: 0.8, ease: "easeOut" }
-};
+} as const;
 
 export default function Home() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
