@@ -277,6 +277,7 @@ export default function Home() {
           
           <div className="flex flex-wrap justify-center gap-4 sm:gap-8 px-4">
             {[
+              { name: "Email", href: "mailto:lmw.hpc@gmail.com", color: "hover:bg-primary hover:text-white" },
               { name: "Medium", href: "https://medium.com/@just_grassy", color: "hover:bg-foreground hover:text-background" },
               { name: "YouTube", href: "https://www.youtube.com/@grassy-person", color: "hover:bg-[#FF0000] hover:text-white" },
               { name: "Discord", href: "https://discord.gg/p9UcFdbx", color: "hover:bg-[#5865F2] hover:text-white" }
